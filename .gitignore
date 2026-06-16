@@ -1,0 +1,93 @@
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+*.pem
+*.key
+secrets/
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+.eggs/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env.local
+.env.*.local
+
+# ── ML models & weights (too large for git) ───────────────────────────────────
+models/base/
+models/lora/
+*.bin
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.gguf
+
+# ── Datasets ──────────────────────────────────────────────────────────────────
+datasets/processed/
+datasets/*.jsonl
+datasets/*.csv
+datasets/*.parquet
+
+# ── Jupyter / notebooks ───────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Testing & coverage ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+
+# ── Linting & type checking ───────────────────────────────────────────────────
+.ruff_cache/
+.mypy_cache/
+
+# ── Docker volumes / local data ───────────────────────────────────────────────
+postgres_data/
+grafana_data/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Celery ────────────────────────────────────────────────────────────────────
+celerybeat-schedule
+celerybeat.pid
+
+# ── Uploads / temp ────────────────────────────────────────────────────────────
+uploads/
+tmp/
+temp/
+/tmp/flashrank/
